@@ -50,7 +50,7 @@ $result = mysqli_query($conn, $query);
                     <tr>
                         <td><?= $row['id'] ?></td>
                         <td><?= $row['reg_date'] ?></td>
-                        <td><?= "$first_name $middle_name $last_name" ?></td>
+                        <td><?= $row['first_name'] . " " . $row['middle_name'] . " " . $row['last_name'] ?></td>
                         <td><?= "Php " . number_format($row['loanable'], 2) ?></td>
                         <td>
                             <a href="edit.php?id=<?= $row['id'] ?>">Edit</a>
