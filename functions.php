@@ -6,7 +6,8 @@ function sanitizeInput($data) {
 
 function generateID($last_name, $reg_date) {
     // Get the first three letters of the last name.
-    $first = substr(trim($last_name), 0, 3);
+    $first = preg_replace("/[^a-zA-Z]/", "", $last_name);
+    $first = substr(trim($first), 0, 3);
 
     // Get the registration date and format as ddMMMYYYY
     $second = date_format(date_create($reg_date), "dMY");
