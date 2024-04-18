@@ -84,6 +84,8 @@ if (isset($_POST['create'])) {
     </style>
 </head>
 <body>
+    <a href="index.php">Go Back</a>
+    <hr>
     <form action="add.php" method="post">
         <div>
             <label for="first_name">First Name</label>

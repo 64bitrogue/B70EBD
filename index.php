@@ -28,6 +28,7 @@ $result = mysqli_query($conn, $query);
 <body>
     <a href="add.php">Add Lender</a>
     <a href="transact.php">Transaction Module</a>
+    <hr>
     <!-- Read -->
     <h1>Lease Management System</h1>
     <form action="index.php" method="get">
